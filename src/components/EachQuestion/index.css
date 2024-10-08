@@ -97,11 +97,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
     color: rgb(10, 0, 48); /* Text color */
     text-align: center; /* Center text */
     padding: 10px; /* Add padding to prevent text overflow */
     overflow: hidden;
+  }
+  .submit-button-in-EachQuestion {
+    margin-top: 10px;
+    background-color: rgb(1, 255, 234);
+    color: #0a012e;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    margin-left: -40px;
+    width: 40%;
+    align-self: center;
   }
 }

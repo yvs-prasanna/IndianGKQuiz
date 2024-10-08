@@ -42,7 +42,7 @@
 @media (max-width: 768px) {
   .EnterName-Block {
     align-self: center;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,16 +54,17 @@
   }
   .EnterName-text {
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Roboto;
+    margin-bottom: 20px;
   }
   .input-Block {
     width: 80%;
     padding: 15px;
     color: #0a012e;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Roboto;
     outline: none;
@@ -74,7 +75,7 @@
     color: #0a012e;
     border-radius: 20px;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: Roboto;
     font-weight: bold;
     cursor: pointer;
