@@ -37,6 +37,9 @@ const Questions = [
   },
 ];
 
+const correctSound = new Audio("/sounds/correct.mp3"); // Adjust the path as necessary
+const wrongSound = new Audio("/sounds/wrong.mp3"); // Adjust the path as necessary
+
 class EachQuestion extends Component {
   state = {
     activeId: 0,
@@ -72,6 +75,7 @@ class EachQuestion extends Component {
           buttonText: "Next Question",
           isCorrect: true,
         });
+        correctSound.play();
       } else if (selectedOption === "") {
         this.setState({
           messege: `${name} Please Select Some Option`,
@@ -84,6 +88,7 @@ class EachQuestion extends Component {
           buttonText: "Try Again",
           selectedOption: "",
         });
+        wrongSound.play();
       }
     } else if (buttonText === "Next Question") {
       if (activeId + 1 === Questions.length) {
@@ -118,6 +123,7 @@ class EachQuestion extends Component {
     return (
       <div className="Question-Page">
         <div className="Question-Block">
+          <p className="questionNo">Question no.{id}</p>
           <h1>
             {id}. {question}
           </h1>
